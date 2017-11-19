@@ -4,7 +4,7 @@
 
 [![Build Status](https://travis-ci.org/Iurii-Dziuban/rainy-hills.svg?branch=master)](https://travis-ci.org/Iurii-Dziuban/rainy-hills)
 [![Coverage Status](https://coveralls.io/repos/github/Iurii-Dziuban/rainy-hills/badge.svg?branch=master)](https://coveralls.io/github/Iurii-Dziuban/rainy-hills?branch=master)
-[![Dependency Status](https://www.versioneye.com/user/projects/5a11ae760fb24f2a6c0d2fa5/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/5a11ae760fb24f2a6c0d2fa5)
+[![Dependency Status](https://www.versioneye.com/user/projects/5a11b2b10fb24f2a6d408632/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/5a11b2b10fb24f2a6d408632)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Iurii-Dziuban/rainy-hills/issues)
 
 Author: Iurii Dziuban  
