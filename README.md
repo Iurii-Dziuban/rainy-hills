@@ -1,5 +1,7 @@
 # rainy-hills: RainyHills Using JAX-RS (Java API for RESTful Web Services), JAX-WS and stateless EJB 3.2
 
+[![Build Status](https://travis-ci.org/Iurii-Dziuban/rainy-hills.svg?branch=master)](https://travis-ci.org/Iurii-Dziuban/rainy-hills)
+
 Author: Iurii Dziuban  
 Technologies: CDI, JAX-RS, JAX-WS, EJB
 Summary: The `rainy-hills` demonstrates a simple Rainy Hills J2EE 7 application, 
