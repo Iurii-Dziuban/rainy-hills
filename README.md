@@ -1,6 +1,11 @@
 # rainy-hills: RainyHills Using JAX-RS (Java API for RESTful Web Services), JAX-WS and stateless EJB 3.2
 
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badge/)    
+
 [![Build Status](https://travis-ci.org/Iurii-Dziuban/rainy-hills.svg?branch=master)](https://travis-ci.org/Iurii-Dziuban/rainy-hills)
+[![Coverage Status](https://coveralls.io/repos/github/Iurii-Dziuban/rainy-hills/badge.svg?branch=master)](https://coveralls.io/github/Iurii-Dziuban/rainy-hills?branch=master)
+[![Dependency Status](https://www.versioneye.com/user/projects/todo/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/todo)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Iurii-Dziuban/rainy-hills/issues)
 
 Author: Iurii Dziuban  
 Technologies: CDI, JAX-RS, JAX-WS, EJB
