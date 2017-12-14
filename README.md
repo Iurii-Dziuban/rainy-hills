@@ -11,9 +11,23 @@ Author: Iurii Dziuban
 Technologies: CDI, JAX-RS, JAX-WS, EJB
 Summary: The `rainy-hills` demonstrates a simple Rainy Hills J2EE 7 application, 
 bundled and deployed as a WAR, that uses *JAX-RS* to solve RainyHills problem.    
- 
 
-## What is it? Project parts and libs
+## Table of contents:
+ * [Static Analysis QA Checks](#checks)
+ * [What is it? Project parts and libs] (#what-is-it-project-parts-and-libs)
+ * [System requirements] (#system-requirements)
+ * [Start the Server](#start-the-server)
+ * [Build and Deploy the Rainy hills application] (#build-and-deploy-the-rainy-hills-application)
+ * [Access the Application](#access-the-application)
+ * [Undeploy the application](#undeploy-the-application)
+ * [Deploy to Wildfly manually])(#deploy-to-wildfly-manually)
+ * [Evaluation points covered](#evaluation-points-covered)
+ * [Comments](#comments)
+ 
+## Checks
+`Jacoco` code coverage, `pmd`, `checkstyle`, `enforcer`, `findbugs`
+
+## What is it Project parts and libs
 
 The `rainy-hills` demonstrates the use of *CDI* , *JAX-RS*, *JAX-WS* and *EJB*
 
@@ -104,3 +118,9 @@ layered - restController, service, ejb levels are provided (no need to go to dao
 testable - unit tests are provided
 deployable - possibility to deploy to Wildfly is covered 
 documented - comments are added to algorithm and implementations, README is provided
+
+## Comments
+
+* project should be multi-project with multiple artifacts. For instance, soap web service client should be in a separate artifact.
+* interface should describe what is does. Implementation details should be near the implementation class
+* instead of using xml string in response - use JAXB implementation or Jackson/gson for json
