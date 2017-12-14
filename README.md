@@ -20,7 +20,7 @@ bundled and deployed as a WAR, that uses *JAX-RS* to solve RainyHills problem.
  * [Build and Deploy the Rainy hills application](#build-and-deploy-the-rainy-hills-application)
  * [Access the Application](#access-the-application)
  * [Undeploy the application](#undeploy-the-application)
- * [Deploy to Wildfly manually])(#deploy-to-wildfly-manually)
+ * [Deploy to Wildfly manually](#deploy-to-wildfly-manually)
  * [Evaluation points covered](#evaluation-points-covered)
  * [Comments](#comments)
  
