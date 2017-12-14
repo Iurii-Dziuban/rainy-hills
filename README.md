@@ -14,10 +14,10 @@ bundled and deployed as a WAR, that uses *JAX-RS* to solve RainyHills problem.
 
 ## Table of contents:
  * [Static Analysis QA Checks](#checks)
- * [What is it? Project parts and libs] (#what-is-it-project-parts-and-libs)
- * [System requirements] (#system-requirements)
+ * [What is it? Project parts and libs](#what-is-it-project-parts-and-libs)
+ * [System requirements](#system-requirements)
  * [Start the Server](#start-the-server)
- * [Build and Deploy the Rainy hills application] (#build-and-deploy-the-rainy-hills-application)
+ * [Build and Deploy the Rainy hills application](#build-and-deploy-the-rainy-hills-application)
  * [Access the Application](#access-the-application)
  * [Undeploy the application](#undeploy-the-application)
  * [Deploy to Wildfly manually])(#deploy-to-wildfly-manually)
