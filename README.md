@@ -12,7 +12,7 @@ Technologies: CDI, JAX-RS, JAX-WS, EJB
 Summary: The `rainy-hills` demonstrates a simple Rainy Hills J2EE 7 application, 
 bundled and deployed as a WAR, that uses *JAX-RS* to solve RainyHills problem.    
 
-## Table of contents:
+# Table of contents:
  * [Static Analysis QA Checks](#checks)
  * [What is it? Project parts and libs](#what-is-it-project-parts-and-libs)
  * [System requirements](#system-requirements)
@@ -22,12 +22,12 @@ bundled and deployed as a WAR, that uses *JAX-RS* to solve RainyHills problem.
  * [Undeploy the application](#undeploy-the-application)
  * [Deploy to Wildfly manually](#deploy-to-wildfly-manually)
  * [Evaluation points covered](#evaluation-points-covered)
- * [Comments](#comments)
+ * [Ideas to try](#ideas)
  
-## Checks
+# Checks
 `Jacoco` code coverage, `pmd`, `checkstyle`, `enforcer`, `findbugs`
 
-## What is it Project parts and libs
+# What is it Project parts and libs
 
 The `rainy-hills` demonstrates the use of *CDI* , *JAX-RS*, *JAX-WS* and *EJB*
 
@@ -46,7 +46,7 @@ test dependencies:
 -Assertj - fluent assertions instead of using JUnit with hamcrest
 -BDDMockito - mocking framework using BDD style.
 
-## System Requirements
+# System Requirements
 
 The application this project produces is designed to be run on Wildfly 11.0.0 version or later.
 
@@ -58,7 +58,7 @@ All you need to build this project is to run `mvn clean install` (unit tests wil
 
 Wildfly 11.0.0 should be downloaded to the machine from here <http://wildfly.org/downloads/> Java EE 7 Full and web distribution 
 
-## Start the Server
+# Start the Server
 
 1. Open a command prompt and navigate to the root of the Wildfly 11.0.0 directory.
 2. The following shows the command line to start the server:
@@ -67,7 +67,7 @@ Wildfly 11.0.0 should be downloaded to the machine from here <http://wildfly.org
         For Windows: ${jboss.home.name}\bin\standalone.bat
 
 
-## Build and Deploy the Rainy hills application
+# Build and Deploy the Rainy hills application
 
 1. Make sure you have started the Wildfly 11.0.0 server as described above.
 2. Open a command prompt and navigate to the root directory of this application.
@@ -78,7 +78,7 @@ Wildfly 11.0.0 should be downloaded to the machine from here <http://wildfly.org
 4. This will deploy `target/rainy-hills.war` to the running instance of the server.
 
 
-## Access the Application
+# Access the Application
 
 The application is deployed to <http://localhost:8080/rainy-hills/>.
 
@@ -90,7 +90,7 @@ using same query param name multiple times will produce an array of hills and va
 Using JAX-WS: run `mvn exec:java` which will invoke SOAP client `RainyHillsSoapWebserviceClient` 
 or just run this main class from the IDE. Look at the output. Input can be changed inside `RainyHillsSoapWebserviceClient` 
 
-## Undeploy the application
+# Undeploy the application
 
 1. Make sure you have started the Wildfly 11.0.0 server as described above.
 2. Open a command prompt and navigate to the root directory of this application.
@@ -99,7 +99,7 @@ or just run this main class from the IDE. Look at the output. Input can be chang
         mvn wildfly:undeploy
 
 
-## Deploy to Wildfly manually
+# Deploy to Wildfly manually
 
 Start the server as it is mentioned above.
 
@@ -109,7 +109,7 @@ Copy war file from `<application>/target/rainy-hills.war` to `<wildfly>/standalo
 
 It will be automatically picked up by the server and deployed
 
-## Evaluation points covered
+# Evaluation points covered
 
 * correctness and clarity of the algorithm -> see RainyHillsEjb and RainyHillsEjbTest with many cases covered
 * readable and maintainable code -> using interfaces, injections, frameworks for testing
@@ -119,8 +119,9 @@ testable - unit tests are provided
 deployable - possibility to deploy to Wildfly is covered 
 documented - comments are added to algorithm and implementations, README is provided
 
-## Comments
+# Ideas
 
-* project should be multi-project with multiple artifacts. For instance, soap web service client should be in a separate artifact.
-* interface should describe what is does. Implementation details should be near the implementation class
-* instead of using xml string in response - use JAXB implementation or Jackson/gson for json
+- project should be multi-project with multiple artifacts. For instance, soap web service client should be in a separate artifact.
+- interface should describe what is does. Implementation details should be near the implementation class
+- instead of using xml string in response - use JAXB implementation or Jackson/gson for json
+
