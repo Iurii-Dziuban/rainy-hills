@@ -18,9 +18,7 @@ package org.interview.rainyhills;
 
 import com.google.common.primitives.Ints;
 import org.interview.rainyhills.contract.RainyHillsServiceContract;
-import org.interview.rainyhills.service.RainyHillsService;
 
-import javax.annotation.Nonnull;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -40,7 +38,7 @@ public class RainyHillsRestController {
     @GET
     @Path("/rainyhills")
     @Produces({ "application/xml" })
-    public String getVolume(@QueryParam("hills") @Nonnull List<Integer> hills) {
+    public String getVolume(@QueryParam("hills") List<Integer> hills) {
         long volume = rainyHillsService.findWaterVolume(Ints.toArray(hills));
         return "<xml><result>" + volume + "</result></xml>";
     }
